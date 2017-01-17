@@ -1,0 +1,13 @@
+启动spark/hadoop集群：
+sh run_spark.sh
+登录主节点：
+sh login_namenode.sh
+登录namenode2的从节点:
+sh login_datanode2.sh
+停止运行所有容器：
+sh stop_containers.sh
+容器启动时默认挂载了主机的/home/lxhao/code/shell目录在/data下面,
+集群每次重新启动后需要重新初始化集群和确认ssh登录,
+ssh登录只需要运行/data/下面的ssh_login.sh， 手动输入几次yes就完成了。
+
+本集群用docker搭建，建议先熟悉docker的基本使用。
